@@ -1,11 +1,9 @@
-from re import I
-from tkinter import font
 from PIL import ImageFont,Image,ImageDraw
-
-font = ImageFont.truetype("GenShinGothic-Bold.ttf",50)
+font_size = 50
+font = ImageFont.truetype("GenShinGothic-Bold.ttf",font_size)
 save = input("請輸入儲存路徑")
 n = int(input("你想生成幾張圖片?"))
-count = int(800/57)
+count = int(int((800/font_size)*1.8))
 
 
 
